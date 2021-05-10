@@ -9,40 +9,76 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!--header-->
     <header>
-        <img src="https://sewmew.co.kr/wp-content/uploads/2019/03/insta-logo-text-600x155.png" height="35px">
-        <form method="GET">
-            <input id="search" type="text" size="30" placeholder="검색">
-        </form>
-        <form method="GET">
-            <div>
-                <i class="fas fa-home icon"></i>
-                <i class="far fa-paper-plane icon"></i>
-                <i class="far fa-compass icon"></i>
-                <i class="far fa-heart icon"></i>
-            </div>
-        </form>
-    </header>
-    <div class="content">
-        <section class="story">
-            <div class="story-each">
-                <img class="story-profile-image" width="50px" height="50px" src="https://cdn.gamsanews.co.kr/news/photo/201706/6078_5824_536.jpg">
-                <a class="story-profile-id">min.i.stop</a>
-            </div>
+        <section class="header-logo-section">
+            <img id="logo" src="img/logo.png" width="103px">
         </section>
-        <section class="feed">
-            <div class="feed-header">
-                <img class="feed-profile-image" width="30px" height="30px" src="https://cdn.gamsanews.co.kr/news/photo/201706/6078_5824_536.jpg">
-                <div class="feed-info">
-                    <a class="feed-profile-id">min.i.stop</a>
-                    <a class="feed-location">풀씨 동방</a>
+        <section class="header-search-section">
+            <input id="search" type="text" size="30" placeholder="검색">
+        </section>
+        <section class="header-menu-section">
+            <i class="fas fa-home menu-icon"></i>
+            <i class="far fa-paper-plane menu-icon"></i>
+            <i class="far fa-compass menu-icon"></i>
+            <i class="far fa-heart menu-icon"></i>
+            <img class="profile-icon circle" width="22px" height="22px" src="img/profile-example-me.jpeg">
+        </section>
+    </header>
+    <!--content-->
+    <section class="content">
+        <!--story-->
+        <article class="story">
+            <div class="story-profile">
+                <div class="story-profile-image-container circle">
+                    <img class="story-profile-image circle" width="100%" height="100%" src="img/profile-example-1.png">
+                </div>
+                <div class="story-profile-id-container">
+                    <a class="story-profile-id">user1</a>
                 </div>
             </div>
-        </section>
-    </div>
-    <footer>
+            <div class="story-profile">
+                <div class="story-profile-image-container circle">
+                    <img class="story-profile-image circle" width="100%" height="100%" src="img/profile-example-2.png">
+                </div>
+                <div class="story-profile-id-container">
+                    <a class="story-profile-id">user2</a>
+                </div>
+            </div>
+            <div class="story-profile">
+                <div class="story-profile-image-container circle">
+                    <img class="story-profile-image circle" width="100%" height="100%" src="img/profile-example-3.png">
+                </div>
+                <div class="story-profile-id-container">
+                    <a class="story-profile-id">user3</a>
+                </div>
+            </div>
+        </article>
+        <!--feed-->
+        <article class="feed">
+            <div class="post-header">
+                <img class="post-profile-image circle" width="32px" height="32px" src="img/profile-example-me.jpeg">
+                <div class="post-info">
+                    <a class="post-profile-id">min.i.stop</a>
+                    <a class="post-location">연세대학교, 신촌</a>
+                </div>
+                <i class="fas fa-ellipsis-v more-icon"></i>
+            </div>
+            <img class="post-image" width="100%" src="img/post-example-1.jpeg">
+            <div class="post-menu">
 
-    </footer>
+            </div>
+            <div class="post-content">
+                좋아요 10개
+                <br>
+                min.i.stop 안녕하세요.
+            </div>
+            <div class="post-comment">
+                댓글 달기
+            </div>
+        </article>
+    </section>
+    <!--script-->
     <script src="/index.js" async defer></script>
 </body>
 </html>

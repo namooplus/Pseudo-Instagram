@@ -2,77 +2,137 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(248, 248, 248);
+    background-color: white;
 }
+
 header {
     display: flex;
+    position: fixed;
+    width: 100vw;
     height: 54px;
     flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
+    box-sizing: border-box;
     padding: 0 20px;
     background-color: white;
-    border-bottom: 1px solid rgb(216, 216, 216);
+    border-bottom: 1px solid rgb(219, 219, 219);
 }
-.content {
+.header-logo-section {
     display: flex;
-    flex-flow: column wrap;
+    flex-grow: 1;
+    flex-flow: row wrap;
+    justify-content: flex-start;
     align-items: center;
 }
+.header-search-section {
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.header-menu-section {
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 78px;
+    background-color: rgb(248, 248, 248);
+}
+
 .story {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     width: 600px;
-    height: 100px;
-    margin-top: 30px;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    padding: 16px 13px 10px 13px;
     background-color: white;
     border: 1px solid rgb(216, 216, 216);
 }
-.story-each {
-    width: 100px;
+.story-profile {
+    box-sizing: border-box;
+    margin: 0 10px;
     text-align: center;
 }
+.story-profile-image-container {
+    width: 63px;
+    height: 63px;
+    box-sizing: border-box;
+    padding: 2.4px;
+    background: linear-gradient(135deg, rgb(197, 0, 197), rgb(151, 151, 2));
+}
 .story-profile-image {
-    border: 2px solid pink;
-    border-radius: 25px;
+    box-sizing: border-box;
+    border: 2.4px solid white;
+}
+.story-profile-id-container {
+    margin-top: 5px;
 }
 .story-profile-id {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
-.feed{
+
+.feed {
     width: 600px;
-    height: 600px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    box-sizing: border-box;
+    margin-bottom: 24px;
     background-color: white;
     border: 1px solid rgb(216, 216, 216);
 }
-.feed-header {
+.post-header {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     height: 60px;
+    padding: 0 15px;
 }
-.feed-profile-image {
+.post-profile-image {
     border: 1px solid rgb(212, 212, 212);
-    border-radius: 15px;
-    margin: 0 15px;
 }
-.feed-info {
+.post-info {
     display: flex;
+    flex-grow: 1;
     flex-flow: column wrap;
+    margin-left: 15px;
 }
-.feed-profile-id {
+.post-profile-id {
     font-size: 0.9rem;
     font-weight: 600;
 }
-.feed-location {
+.post-location {
     margin-top: 3px;
     font-size: 0.7rem;
 }
+.post-image {
+    border-top: 1px solid rgb(224, 224, 224);
+}
+.post-menu {
+    height: 40px;
+    padding: 0 15px;
+}
+.post-content {
+    padding: 0 15px;
+}
+.post-comment {
+    height: 60px;
+    padding: 0 15px;
+    border-top: 1px solid rgb(224, 224, 224);
+}
 
 /* element */
+#logo {
+    margin-top: 7px;
+}
 #search {
     height: 25px;
     background-color: rgb(247, 247, 247);
@@ -80,9 +140,43 @@ header {
     border-radius: 3px;
     text-align: center;
 }
+.menu-icon {
+    margin-left: 22px;
+    font-size: 1.3rem;
+}
+.profile-icon {
+    margin-left: 22px;
+}
+.more-icon {
+    font-size: 0.8rem;
+}
 
 /* option */
-.icon {
-    margin: 10px;
-    font-size: 1.4rem;
+.circle {
+    border-radius: 100px;
+}
+
+/* mobile resolution */
+@media screen and (max-width: 600px) {
+    .header-search-section {
+        display: none;
+    }
+    .story {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 24px;
+        padding: 16px 13px 10px 13px;
+        background-color: white;
+        border: 1px solid rgb(216, 216, 216);
+    }
+    .feed {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 24px;
+        background-color: white;
+        border: 1px solid rgb(216, 216, 216);
+    }
 }
