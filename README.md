@@ -1,1 +1,1 @@
-# FEStudy - Instagram Design
+# Pseudo Instagram (FE Study)
