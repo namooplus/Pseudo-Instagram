@@ -1,0 +1,88 @@
+/* layout */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 248, 248);
+}
+header {
+    display: flex;
+    height: 54px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: white;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.story {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 600px;
+    height: 100px;
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid rgb(216, 216, 216);
+}
+.story-each {
+    width: 100px;
+    text-align: center;
+}
+.story-profile-image {
+    border: 2px solid pink;
+    border-radius: 25px;
+}
+.story-profile-id {
+    font-size: 0.8rem;
+}
+.feed{
+    width: 600px;
+    height: 600px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 1px solid rgb(216, 216, 216);
+}
+.feed-header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 60px;
+}
+.feed-profile-image {
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 15px;
+    margin: 0 15px;
+}
+.feed-info {
+    display: flex;
+    flex-flow: column wrap;
+}
+.feed-profile-id {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.feed-location {
+    margin-top: 3px;
+    font-size: 0.7rem;
+}
+
+/* element */
+#search {
+    height: 25px;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 3px;
+    text-align: center;
+}
+
+/* option */
+.icon {
+    margin: 10px;
+    font-size: 1.4rem;
+}
