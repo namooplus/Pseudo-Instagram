@@ -18,10 +18,10 @@
             <input id="search" type="text" size="30" placeholder="검색">
         </section>
         <section class="header-menu-section">
-            <i class="fas fa-home menu-icon"></i>
-            <i class="far fa-paper-plane menu-icon"></i>
-            <i class="far fa-compass menu-icon"></i>
-            <i class="far fa-heart menu-icon"></i>
+            <i class="fas fa-home header-menu-icon"></i>
+            <i class="far fa-paper-plane header-menu-icon"></i>
+            <i class="far fa-compass header-menu-icon"></i>
+            <i class="far fa-heart header-menu-icon"></i>
             <img class="profile-icon circle" width="22px" height="22px" src="img/profile-example-me.jpeg">
         </section>
     </header>
@@ -66,16 +66,29 @@
             </div>
             <img class="post-image" width="100%" src="img/post-example-1.jpeg">
             <div class="post-menu">
-
+                <i class="far fa-heart post-menu-icon"></i>
+                <i class="far fa-comment post-menu-icon"></i>
+                <i class="far fa-paper-plane post-menu-icon"></i>
+                <p></p>
+                <i class="far fa-bookmark post-menu-icon"></i>
             </div>
             <div class="post-content">
-                좋아요 10개
-                <br>
-                min.i.stop 안녕하세요.
+                <a class="post-profile-id">좋아요 1개</a>
+                <div class="post-comment-list">
+                    <div class="post-content-paragraph">
+                        <a class="post-profile-id">min.i.stop</a> 학교 사진
+                    </div>
+                    <div class="post-comment-paragraph">
+                        <a class="post-profile-id">user1</a> 와
+                    </div>
+                </div>
+                <span class="post-time">2분 전</span>
             </div>
-            <div class="post-comment">
-                댓글 달기
-            </div>
+            <form class="post-comment" method="POST">
+                <i class="far fa-smile post-comment-icon"></i>
+                <input id="post-comment-content" type="text" placeholder="댓글 달기...">
+                <input id="post-comment-submit" type="submit" value="게시">
+            </form>
         </article>
     </section>
     <!--script-->
