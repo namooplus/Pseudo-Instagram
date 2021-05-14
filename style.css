@@ -19,22 +19,22 @@ header {
 }
 .header-logo-section {
     display: flex;
-    flex-grow: 1;
+    flex: 1 1 0;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
 }
 .header-search-section {
     display: flex;
-    flex-grow: 1;
+    flex: 1 1 0;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
 .header-menu-section {
     display: flex;
-    flex-grow: 1;
-    flex-flow: row wrap;
+    flex: 1 1 0;
+    flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
 }
@@ -208,21 +208,9 @@ header {
         display: none;
     }
     .story {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
         width: 100%;
-        box-sizing: border-box;
-        margin-bottom: 24px;
-        padding: 16px 13px 10px 13px;
-        background-color: white;
-        border: 1px solid rgb(216, 216, 216);
     }
     .feed {
         width: 100%;
-        box-sizing: border-box;
-        margin-bottom: 24px;
-        background-color: white;
-        border: 1px solid rgb(216, 216, 216);
     }
 }
