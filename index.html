@@ -66,27 +66,27 @@
             </section>
             <img class="post-image" width="100%" src="img/post-example-1.jpeg">
             <section class="post-menu-section">
-                <i class="far fa-heart post-menu-icon"></i>
+                <i id="heart-button" class="far fa-heart post-menu-icon"></i>
                 <i class="far fa-comment post-menu-icon"></i>
                 <i class="far fa-paper-plane post-menu-icon"></i>
                 <p></p>
                 <i class="far fa-bookmark post-menu-icon"></i>
             </section>
             <section class="post-content-section">
-                <a class="content-font bold">좋아요 0개</a>
+                <a class="content-font bold">좋아요 <span id="heart-state">0</span>개</a>
                 <div class="post-content-list">
                     <div class="content-font">
                         <a class="bold">min.i.stop</a> 야경
                     </div>
-                    <div class="content-font mt5">
+                    <!-- <div class="content-font mt5">
                         <a class="bold">user1</a> 와
-                    </div>
+                    </div> -->
                 </div>
                 <span class="post-time">2분 전</span>
             </section>
-            <form class="post-comment-section" method="POST">
+            <form class="post-comment-section">
                 <i class="far fa-smile post-comment-icon"></i>
-                <input id="post-comment-input" type="text" placeholder="댓글 달기...">
+                <input id="post-comment-input" type="text" placeholder="댓글 달기..." autocomplete="off">
                 <input id="post-comment-submit" type="submit" value="게시">
             </form>
         </article>
